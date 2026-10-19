@@ -66,5 +66,5 @@ function v7() {
   return format(bytes);
 }
 
-const generate = v7;
+const generate = v4;
 module.exports = { v4, v7, generate, default: generate };

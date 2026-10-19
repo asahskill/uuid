@@ -19,9 +19,9 @@ test('ESM and CommonJS provide valid RFC version and variant bits', () => {
       }
     }
   }
-  assert.equal(generate, v7);
-  assert.equal(namedGenerate, v7);
-  assert.equal(cjs.generate, cjs.v7);
+  assert.equal(generate, v4);
+  assert.equal(namedGenerate, v4);
+  assert.equal(cjs.generate, cjs.v4);
 });
 
 test('v7 retains timestamp and strictly sorts within the same millisecond', () => {

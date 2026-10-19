@@ -2,13 +2,13 @@
 import { v4, v7 } from '../src/index.mjs';
 
 const args = process.argv.slice(2);
-let version = 'v7';
+let version = 'v4';
 let count = 1;
 try {
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
     if (arg === '--help' || arg === '-h') {
-      console.log('Usage: uuid-gen [--v4|--v7] [--count N]\nGenerate secure UUIDs; default: v7.');
+      console.log('Usage: uuid-gen [--v4|--v7] [--count N]\nGenerate secure UUIDs; default: v4.');
       process.exit(0);
     }
     if (arg === '--v4' || arg === '--v7') version = arg.slice(2);

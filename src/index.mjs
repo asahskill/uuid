@@ -67,5 +67,5 @@ export function v7() {
   return format(bytes);
 }
 
-export const generate = v7;
+export const generate = v4;
 export default generate;
