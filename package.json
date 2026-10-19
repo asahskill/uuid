@@ -1,0 +1,23 @@
+{
+  "name": "@asahskill/uuid",
+  "version": "0.1.0",
+  "description": "Small, dependency-free UUID v4 and v7 generator for JavaScript runtimes",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "engines": { "node": ">=20" },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.mjs",
+      "require": "./src/index.cjs"
+    }
+  },
+  "types": "./src/index.d.ts",
+  "bin": { "uuid-gen": "./bin/uuid-gen.mjs" },
+  "files": ["src", "bin", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/index.mjs && node --check src/index.cjs && node --check bin/uuid-gen.mjs && node --test"
+  }
+}
