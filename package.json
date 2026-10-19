@@ -1,0 +1,17 @@
+{
+  "name": "uuid-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generate UUID v4 values from the command line.",
+  "type": "module",
+  "bin": {
+    "uuid": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node ./src/cli.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
